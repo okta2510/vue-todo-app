@@ -47,9 +47,9 @@ function handleSubmit() {
       <!-- Filter Buttons -->
       <div class="flex justify-center gap-4 mb-6">
         <button
-          v-for="filterOption in ['all', 'active', 'completed']"
+          v-for="filterOption in ['all', 'active', 'completed'] as Array<'all' | 'active' | 'completed'>"
           :key="filterOption"
-          @click="todoStore.filter = filterOption"
+          @click="todoStore.filter = filterOption || 'all'"
           :class="[
             'px-4 py-2 rounded-lg',
             todoStore.filter === filterOption

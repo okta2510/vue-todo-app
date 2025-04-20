@@ -1,0 +1,1 @@
+{"root":["./src/main.ts","./src/vite-env.d.ts","./src/stores/todostore.ts","./src/types/todo.ts","./src/app.vue","./src/components/helloworld.vue","./src/components/todoitem.vue"],"version":"5.8.3"}
